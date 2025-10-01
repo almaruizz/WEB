@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      background-color: #231123; /* tu color */
+    }
+  </style>
+</head>
+<body>
+    
+    <input style="background-color: #231123; color: #c30f45;" id="numero1" type="text">
+    <button id="boton" style="color: #c30f45; background-color: #231123;">Estiliza tu texto :d </button>
+    <p id="parrafo" style="color: aqua; font-size: 50px; font-family:cursive"></p>
+    <script>
+        document.getElementById("boton").addEventListener("click", preguntarNumero)
+
+        function preguntarNumero(){
+            let val  = document.getElementById ("numero1").value 
+            document.getElementById("parrafo").innerHTML = val
+        }
+    </script>
+    
+   
+
+
+
+</body>
+</html>
